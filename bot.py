@@ -4,6 +4,8 @@ import requests
 import os
 
 TOKEN = os.getenv("BOT_TOKEN")
+if not TOKEN:
+    raise RuntimeError("❌ BOT_TOKEN topilmadi. Railway Variables ni tekshiring.")
 
 alerts = {}
 
