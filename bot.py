@@ -96,3 +96,4 @@ app.add_handler(CommandHandler("alerts", show_alerts))
 app.job_queue.run_repeating(alert_checker, interval=30, first=10)
 
 app.run_polling()
+# bot ready
